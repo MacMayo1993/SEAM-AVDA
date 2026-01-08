@@ -1,0 +1,11 @@
+% Simple SEAM query: Adaptive k-NN with parity-stratified search
+%
+% Algorithm:
+% 1. Load query vector q
+% 2. Compute energy partition α_±
+% 3. Conditional seam S_k*:
+%    - If structure-dominated (α_max > k*): use parity index
+%    - Else: use quotient index
+% 4. Return top-10 results
+
+q α_± S_k* [P+ · k] [σ · k] ? top_k(10) .
